@@ -1,6 +1,11 @@
 Первое задание для начинающих изучение backbone.
 В приложении реализована простейшая система опросов. Необходимо перевести ее на backbone.js
 
+В работе использовать:
+  - gem 'backbone-rails' (https://github.com/codebrew/backbone-rails)
+  - gem 'handlebars_assets' (https://github.com/leshill/handlebars_assets)
+  - jslib https://github.com/PaulUithol/Backbone-relational
+
 Структура приложения:
 
   Модели:
@@ -18,4 +23,3 @@
   1. Сделать render и голосование в опросе на страницах конкретного опроса: /polls/:id (на данном этапе можно использовать только коллекцию @items)
   2. Используя backbone-relation создать коллекции @poll с вложенными коллекциями @items (has_many relation)
   3. Перевести на backbone блок Random Poll (т.о. на одной странице должно рендериться и работать несколько опросов)
-
