@@ -1,0 +1,6 @@
+%ul.nav.nav-list.poll
+  %li.nav-header= "#{poll.name} (#{poll.votes_count})"
+  - poll.items.each do |item|
+    = link_to item.name, vote_poll_item_path(poll, item)
+    %li.progress
+      .bar{style: "width: #{percentage_votes(poll.votes_count, item.votes_count)}%; "}
