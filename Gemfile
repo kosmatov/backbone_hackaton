@@ -26,7 +26,7 @@ gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
 gem 'rails-backbone'
 gem 'js-routes'
-
+gem 'haml_coffee_assets'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
