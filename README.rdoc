@@ -2,7 +2,7 @@
 В приложении реализована простейшая система опросов. Необходимо перевести ее на backbone.js
 
 В работе использовать:
-  - gem 'backbone-rails' (https://github.com/codebrew/backbone-rails)
+  - gem 'rails-backbone' (https://github.com/codebrew/backbone-rails)
   - gem 'handlebars_assets' (https://github.com/leshill/handlebars_assets)
   - jslib https://github.com/PaulUithol/Backbone-relational
 
