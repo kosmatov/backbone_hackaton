@@ -29,6 +29,8 @@ gem 'js-routes'
 gem 'haml_coffee_assets'
 gem 'jquery-rails'
 
+gem 'vendorer'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
