@@ -9,3 +9,9 @@ window.BackboneHackaton =
   Collections: {}
   Routers: {}
   Views: {}
+
+$ ->
+  router = new BackboneHackaton.Routers.PollsRouter()
+  router.index()
+
+  Backbone.history.start()
