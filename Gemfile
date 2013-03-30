@@ -16,6 +16,8 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'haml_coffee_assets'
+  gem 'execjs'
 end
 
 gem 'less-rails'
@@ -23,7 +25,6 @@ gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
 gem 'rails-backbone'
 gem 'js-routes'
-
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
