@@ -1,17 +1,16 @@
 class BackboneHackaton.Models.Poll extends Backbone.Model
   paramRoot: 'poll'
 
-  realtions: [{
+
+  realtions: [
     type: Backbone.HasMany,
     key: 'items',
     relatedModel: 'PollItem',
     collectionType: 'ItemsCollection',
-    reverseRelation: {
+    reverseRelation:
       key: 'poll',
       includeInJSON: 'id'
-    }
-  }]
-
+  ]
 
   defaults:
     name: null
