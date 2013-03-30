@@ -1,1 +1,5 @@
 %h1 Listing all polls
+%table
+  %tbody
+    - for poll in @polls
+      = JST["backbone/templates/polls/poll"](poll)

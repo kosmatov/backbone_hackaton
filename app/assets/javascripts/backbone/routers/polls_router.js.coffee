@@ -17,7 +17,6 @@ class BackboneHackaton.Routers.PollsRouter extends Backbone.Router
 
   index: ->
     @view = new BackboneHackaton.Views.Polls.IndexView(polls: @polls)
-    console.debug('asdasdasd')
     $("#polls").html(@view.render().el)
 
   show: (id) ->

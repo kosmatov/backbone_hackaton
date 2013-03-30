@@ -1,14 +1,1 @@
-- if @polls.any?
-  %h1 Опросы
-  %table.table
-    %tr
-      %th Id
-      %th Poll
-      %th Total Votes
-    - @polls.each do |poll|
-      %tr
-        %td= poll.id
-        %td= link_to poll.name, poll
-        %td= poll.votes_count
-
 #polls
