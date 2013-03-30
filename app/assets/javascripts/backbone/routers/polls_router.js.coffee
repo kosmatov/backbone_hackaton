@@ -1,7 +1,9 @@
 class BackboneHackaton.Routers.PollsRouter extends Backbone.Router
   initialize: (options) ->
     @polls = new BackboneHackaton.Collections.PollsCollection()
-    @polls.reset options.polls
+    # @polls.reset options.polls
+    @polls.fetch();
+    console.log('zozo')
 
   routes:
     "new"      : "newPoll"
@@ -16,6 +18,7 @@ class BackboneHackaton.Routers.PollsRouter extends Backbone.Router
 
   index: ->
     @view = new BackboneHackaton.Views.Polls.IndexView(polls: @polls)
+    console.debug('asdasdasd')
     $("#polls").html(@view.render().el)
 
   show: (id) ->

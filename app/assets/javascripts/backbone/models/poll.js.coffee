@@ -18,4 +18,4 @@ class BackboneHackaton.Models.Poll extends Backbone.Model
 
 class BackboneHackaton.Collections.PollsCollection extends Backbone.Collection
   model: BackboneHackaton.Models.Poll
-  url: '/polls'
+  url: '/polls.json'

@@ -11,7 +11,7 @@ class BackboneHackaton.Views.Polls.IndexView extends Backbone.View
 
   addOne: (poll) =>
     view = new BackboneHackaton.Views.Polls.PollView({model : poll})
-    @$("tbody").append(view.render().el)
+    @$("#polls").append(view.render().el)
 
   render: =>
     @$el.html(@template(polls: @options.polls.toJSON() ))
